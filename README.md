@@ -22,6 +22,3 @@ _Our project is about traditional library services,users often face challenges s
 - _**Book Reservation**:Users can reserve books they intend to borrow in the future._
 - _**Admin Panel**:5.  Admins have access to a dedicated panel where they can perform real-time updates by adding new books and updating their status._
 
-**_Contributing_**
-
-_Contributions are welcome! If you have any ideas for improvements or new features, feel free to submit a pull request._
