@@ -1,0 +1,77 @@
+
+create table users( username varchar(100) , registration_number varchar(100) , password varchar(100));
+CREATE TABLE reserved_books (
+  sno int(11) NOT NULL,
+  regdno varchar(20) NOT NULL,
+  book varchar(20) NOT NULL,
+  author varchar(20) NOT NULL
+);
+INSERT INTO reserved_books (sno, regdno, book, author) VALUES
+(1, '22b01a0580', 'java programming', 'Brian Goetz');
+
+CREATE TABLE books_dataset (
+  book_id int(11) NOT NULL,
+  book varchar(255) DEFAULT NULL,
+  author varchar(255) DEFAULT NULL
+);
+
+iNSERT INTO books_dataset (book_id, book, author) VALUES
+(1, 'Algorithms', 'Thomas H. Cormen'),
+(2, 'Clean Code', 'Robert C. Martin'),
+(3, 'Pragmatic Programmer', 'Andrew Hunt'),
+(4, 'Design Patterns', 'Erich Gamma'),
+(5, 'Operating Systems', 'Abraham Silberschatz'),
+(6, 'Computer Networking', 'James F. Kurose'),
+(7, 'Artificial Intelligence', 'Stuart Russell'),
+(8, 'Database Management Systems', 'Raghu Ramakrishnan'),
+(9, 'Digital Design', 'M. Morris Mano'),
+(10, 'Microelectronics Circuits', 'Donald A. Neamen'),
+(11, 'Digital Signal Processing', 'John G. Proakis'),
+(12, 'Electromagnetic Field Theory', 'Bhag Singh Guru'),
+(13, 'Digital Image Processing', 'Anil K. Jain'),
+(14, 'Analog Electronic Circuits', 'David A. Bell'),
+(15, 'Electronic Devices and Circuits', 'Robert L. Boylestad'),
+(16, 'Principles of Communications', 'Rodger E. Ziemer'),
+(17, 'Computer System Architecture', 'M. Morris Mano'),
+(18, 'Data Communications and Networking', 'Behrouz A. Forouzan'),
+(19, 'Automata and Computability', 'Dexter C. Kozen'),
+(20, 'Power System Analysis', 'John J. Grainger'),
+(21, 'Electric Power Distribution Systems', 'Turan Gonen'),
+(22, 'Electrical Machines', 'Slobodan N. Vukosavic'),
+(23, 'Control Systems Engineering', 'Norman S. Nise'),
+(24, 'Python Programming', 'Sumitra Arora'),
+(25, 'Java Programming', 'Brian Goetz'),
+(26, 'Mechanics of Materials', 'Russell C. Hibbeler'),
+(27, 'Engineering Mechanics: Statics', 'J.L. Meriam'),
+(28, 'Fluid Mechanics', 'Frank M. White');
+
+CREATE TABLE availablebooks (
+  book_id int(11) NOT NULL,
+  book varchar(255) DEFAULT NULL,
+  author varchar(255) DEFAULT NULL
+);
+
+INSERT INTO availablebooks (book_id, book, author) VALUES
+(1, 'Algorithms', 'Thomas H. Cormen'),
+(2, 'Clean Code', 'Robert C. Martin'),
+(3, 'Pragmatic Programmer', 'Andrew Hunt'),
+(4, 'Design Patterns', 'Erich Gamma'),
+(5, 'Operating Systems', 'Abraham Silberschatz'),
+(6, 'Computer Networking', 'James F. Kurose'),
+(7, 'Artificial Intelligence', 'Stuart Russell'),
+(8, 'Database Management Systems', 'Raghu Ramakrishnan'),
+(9, 'Digital Design', 'M. Morris Mano'),
+(10, 'Microelectronics Circuits', 'Donald A. Neamen'),
+(11, 'Digital Signal Processing', 'John G. Proakis'),
+(12, 'Electromagnetic Field Theory', 'Bhag Singh Guru'),
+(13, 'Digital Image Processing', 'Anil K. Jain'),
+(14, 'Analog Electronic Circuits', 'David A. Bell'),
+(15, 'Electronic Devices and Circuits', 'Robert L. Boylestad'),
+(16, 'Principles of Communications', 'Rodger E. Ziemer'),
+(17, 'Computer System Architecture', 'M. Morris Mano'),
+(18, 'Data Communications and Networking', 'Behrouz A. Forouzan'),
+(19, 'Automata and Computability', 'Dexter C. Kozen'),
+(20, 'Power System Analysis', 'John J. Grainger'),
+(21, 'Electric Power Distribution Systems', 'Turan Gonen'),
+(22, 'Electrical Machines', 'Slobodan N. Vukosavic'),
+(23, 'Control Systems Engineering', 'Norman S. Nise');
